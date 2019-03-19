@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+}
+#container{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    grid-template-rows: 10fr 1fr;
+    grid-template-areas: 
+    "s c"
+    "s m";
+
+    /* OR: 
+    and remove cols and rows*/
+    /* 
+    "s c c c"
+    "s c c c"
+    "s c c c"
+    "s c c c"
+    "s c c c"
+    "s c c c"
+    "s c c c"
+    "s c c c"
+    "s c c c"
+    "s c c c"
+    "s m m m"; */
+}
+
+#side{
+    height: 100vh;
+    background-color: blue;
+    grid-area: s;
+
+
+    display:grid;
+    
+}
+#contant_header{
+    background-color: blue;
+}
+.contact {
+    padding:3px;
+    margin:5px;
+    text-align: left;
+    height:30px;
+    grid-area: "contact";
+    background-color: blueviolet;
+    
+}
+.chat_item{
+    display: inline-block;
+    margin: 3px;
+    border: 1px;
+    font-size: 20px;
+    padding:10px;
+    position: relative;
+}
+.reciever{
+    display: inline-block;
+    background-color:lightskyblue;
+    position: absolute;
+    right: 1px;
+}
+.time {
+    font-size: 10px;
+}
+.sender{
+    display: inline-block;
+    background-color: rgba(73, 172, 142, 0.664);
+    position: absolute;
+    left: 1px;
+}
+#chat {
+
+    background-color: pink;
+    /* display: grid; */
+    grid-area: c;
+
+    display:grid;
+
+}
+
+#message{
+    background-color: yellowgreen;
+    display: grid;
+    grid-area: m;
+
+    grid-template-columns: 7fr 1fr;
+    grid-template-areas: 
+    "type_area send_area";
+}
+
+#input_div{
+    grid-area: "type_area";
+    background-color: darkorange;
+}
+#send_div{
+    grid-area: "send_area";
+    background-color: darkturquoise;
+}
+#text_input{
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#send_btn{
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}

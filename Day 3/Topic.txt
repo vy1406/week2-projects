@@ -1,0 +1,8 @@
+Jquery
+	- methods
+	- events
+	- this
+	- ! do not use arrow funciton when about to use this in object...
+Data Flow ( mvc ) 
+Tweeter
+
