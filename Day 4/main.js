@@ -47,7 +47,6 @@ $(".validator").on("click", function(){
 // add listiner to console BOTH span texts  
 // ----------------------------
 
-
 $(".validator").on("click", function(){
     let relevantInputValue = $(this).closest(".computer").find(".processor").children()
     let str = "";
